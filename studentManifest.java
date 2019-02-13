@@ -1,5 +1,6 @@
 import javax.swing.JOptionPane;
 import java.util.ArrayList;
+import java.util.Collections;
 
 class studentManifest {
 	
@@ -24,5 +25,11 @@ class studentManifest {
 		}
 		// Output the student ArrayList to the window
 		System.out.println(studentManifest);
+
+		// More testing
+		Collections.sort(studentManifest);  // Sort studentManifest
+		for (String s : studentManifest) {
+			System.out.println("Sorted Student: " + s);
+		}
 	}	
 }
